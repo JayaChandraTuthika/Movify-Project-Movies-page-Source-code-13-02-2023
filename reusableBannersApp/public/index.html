@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Telugu Movies Online</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;500;600;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="moviesPageStyles.css">
+    <link rel="stylesheet" href= "movieCards.css">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="icon" href="https://ik.imagekit.io/93bbofu0i7/Netflix_project/short_videos/ff3fc80f0ee5d27d761296b66c163afa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673429939234">
+    <script src="https://kit.fontawesome.com/2f975a241a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,200;1,400&family=Oswald:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- React CDN  -->
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    
+    <script type="text/javascript">
+      // hide HRM logs because they're distracting
+      // prettier-ignore
+      const log = console.log;
+      // prettier-ignore
+      console.log = (...args) =>
+        args[0]?.includes?.('[HMR]') ? null : log(...args);
+    </script>
+  </head>
+  <body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216662/Movify-project-resources/movie-posters/tegimpu_nrbrd9.png" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216662/Movify-project-resources/movie-posters/veerayya_yrpbks.jpg" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216836/Movify-project-resources/movie-posters/varasudu_fifmmu.png" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/avatar_fwavr3.png" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/pushpa_gz8ew2.jpg" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/akhanda_hm8cm0.png" class="d-block w-100 carousal-image" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216662/Movify-project-resources/movie-posters/karthikeya_ylvshs.png" class="d-block w-100 carousal-image" alt="...">
+          </div>
+        </div>
+    </div>
+
+
+    <div class="header-section">
+        <nav>
+            <div class="movify-logo-container-nav">
+                <img src="https://ik.imagekit.io/93bbofu0i7/Netflix_project/short_videos/ff3fc80f0ee5d27d761296b66c163afa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673429939234" class="netflix-logo-nav" alt="logo">
+                <span class="logo-nav-part-text">OVIFY</span>
+            </div>
+            <div class="navigation-menu-navbar">
+                <a class="navigation-link-style">Home</a>
+                <a class="navigation-link-style">Movies</a>
+                <a class="navigation-link-style">Web series</a>
+                <a class="navigation-link-style">TV shows</a>
+                <a class="navigation-link-style">Contact us</a>
+            </div>
+            <img src="https://res.cloudinary.com/dds8wfxdw/image/upload/v1674146697/Movify-project-resources/profile-pic-movify_uiwlqb.jpg" class="profile-pic-nav"/>
+        </nav>
+        <div class="bottom-section">
+            <div class="side-bar">
+                <div class="menu-heading-container"><span class="menu">MENU</span> <i class="fa-solid fa-bars side-bar-icon"></i></i></div>
+                <hr class="seperator-line-sidebar"/>
+                <div class="side-bar-toggle-container">
+                    <div class="side-bar-options-container"><i class="fa-solid fa-user side-bar-icon"></i><span class="side-bar-options">Profile</span></div>
+                    <div class="side-bar-options-container"><i class="fa-regular fa-clock side-bar-icon"></i><span class="side-bar-options">Recent</span></div>
+                    <div class="side-bar-options-container"><i class="fa-solid fa-bookmark side-bar-icon"></i></i><span class="side-bar-options">Bookmarked</span></div>
+                    <div class="side-bar-options-container"><i class="fa-solid fa-download side-bar-icon"></i><span class="side-bar-options">Downloaded</span></div>
+                    
+                </div>
+                <hr class="seperator-line-sidebar"/>
+                <div class="side-bar-toggle-container">
+                    <div class="side-bar-options-container"><i class="fa-solid fa-gear side-bar-icon"></i><span class="side-bar-options">Settings</span></div>
+                    <div class="side-bar-options-container"><i class="fa-solid fa-circle-info side-bar-icon"></i><span class="side-bar-options">Help</span></div>
+                    
+                    
+                </div>
+                <div class="logout-toggle-container">
+                    <div class="log-out-options-container"><i class="fa-solid fa-right-from-bracket side-bar-icon"></i><span class="side-bar-options">Log Out</span></div>
+                    
+                    
+                </div>
+
+            </div>
+                
+            <div class="content-section" id="contentSection">
+                <!-- Trending Section
+                <h1 class="category-heading">Trending <img src="https://e.unicode-table.com/orig/cf/9a75973ba3bb465be5e9459a656458.png" class="star-image"/></h1>
+                <div class="horizontal-scroll">
+
+                    
+                    <div class="stories-container">
+                        <div class="movie-card movie-1">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                    <p class="movie-name">Tegimpu</p>
+                            </div>
+                        </div>
+                        <div class="movie-card movie-5">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">Avatar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card movie-4">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">Pushpa</p>
+                            </div>
+                        </div>
+                        
+                            
+                        <a class="more-button">More<i class="fa-solid fa-chevron-right scroll-arrows to-right"></i></a>
+                        
+                        
+                    </div>
+                </div>
+
+                Top Rated Section
+                
+                <h1 class="category-heading">Top rated <img src="https://e.unicode-table.com/orig/5f/648215753933caf21bd05372c45c2c.png" class="star-image"/></h1>
+                <div class="horizontal-scroll">
+
+                    
+                    <div class="stories-container">
+                        <div class="movie-card movie-Vikram">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                    <p class="movie-name">Vikram-Hitlist</p>
+                            </div>
+                        </div>
+                        <div class="movie-card movie-RadheShyam">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">Radhe Shyam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card movie-RRR">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">RRR</p>
+                            </div>
+                        </div>
+                        
+                            
+                        <a class="more-button">More<i class="fa-solid fa-chevron-right scroll-arrows to-right"></i></a>
+                        
+                        
+                    </div>
+                    
+                     Web Series -->
+                <!-- </div>
+                <h1 class="category-heading">Web Series <img src="https://e.unicode-table.com/orig/6d/977e6d5a5d9b507cf215dbb8eaa556.png" class="star-image"/></h1>
+                <div class="horizontal-scroll">
+
+                    
+                    <div class="stories-container">
+                        <div class="movie-card webseries-parampara">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                    <p class="movie-name">Vikram-Hitlist</p>
+                            </div>
+                        </div>
+                        <div class="movie-card webseries-Locked">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">Radhe Shyam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="movie-card webseries-Kailasapuram">
+                            <div class="details-of-movie-card">
+                                    <i class="fa-solid fa-circle-play play-icon"></i>
+                                <p class="movie-name">RRR</p>
+                            </div>
+                        </div>
+                        
+                            
+                        <a class="more-button">More<i class="fa-solid fa-chevron-right scroll-arrows to-right"></i></a>
+                        
+                        
+                    </div>
+                
+                </div> -->
+            </div> 
+
+            
+            
+        </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

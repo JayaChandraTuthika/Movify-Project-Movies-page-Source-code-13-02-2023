@@ -1,0 +1,90 @@
+.movie-card {
+  min-width: 250px;
+
+  margin-right: 15px;
+  min-height: 100%;
+  transition: 0.2s all ease;
+  display: flex;
+
+  border-radius: 10px;
+  background-size: cover;
+  padding: 0;
+}
+.movie-card:hover {
+  min-height: 115%;
+  min-width: 280px;
+}
+
+.details-of-movie-card {
+  padding: 6px;
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+  transition: 1s all ease;
+  /* border: 1px solid white; */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  border-radius: 10px;
+}
+.details-of-movie-card:hover {
+  background-color: rgba(3, 3, 3, 0.507);
+  color: white;
+}
+.movie-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 0;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.play-icon {
+  font-size: 30px;
+  margin: auto;
+  position: relative;
+  top: 5px;
+}
+
+.movie-1 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216662/Movify-project-resources/movie-posters/tegimpu_nrbrd9.png');
+}
+.movie-2 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216836/Movify-project-resources/movie-posters/varasudu_fifmmu.png');
+}
+.movie-3 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216662/Movify-project-resources/movie-posters/veerayya_yrpbks.jpg');
+}
+.movie-4 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/pushpa_gz8ew2.jpg');
+}
+.movie-5 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/avatar_fwavr3.png');
+}
+.movie-6 {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1674216661/Movify-project-resources/movie-posters/akhanda_hm8cm0.png');
+}
+.movie-Vikram {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675084795/Movify-project-resources/movie-posters/New%20Releases/Vikram-long_pkqhtd.png');
+}
+.movie-RadheShyam {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675084803/Movify-project-resources/movie-posters/New%20Releases/Radhe_Shyam_l5zycx.png');
+}
+.movie-RRR {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675084800/Movify-project-resources/movie-posters/New%20Releases/RRR-long_rvsvy8.png');
+}
+
+.webseries-parampara {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675088607/Movify-project-resources/movie-posters/Webseries/parampara_bhbzbg.png');
+}
+.webseries-Locked {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675088610/Movify-project-resources/movie-posters/Webseries/Locked_faft4q.png');
+}
+.webseries-Kailasapuram {
+  background-image: url('https://res.cloudinary.com/dds8wfxdw/image/upload/v1675088609/Movify-project-resources/movie-posters/Webseries/kailasapuram_hhxf7r.png');
+}
