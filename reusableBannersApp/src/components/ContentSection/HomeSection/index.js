@@ -88,20 +88,20 @@ const HomeSection = () => (
         <div className="movie-card webseries-parampara">
           <div className="details-of-movie-card">
             <i className="fa-solid fa-circle-play play-icon">{}</i>
-            <p className="movie-name">Vikram-Hitlist</p>
+            <p className="movie-name">Parampara</p>
           </div>
         </div>
         <div className="movie-card webseries-Locked">
           <div className="details-of-movie-card">
             <i className="fa-solid fa-circle-play play-icon">{}</i>
-            <p className="movie-name">Radhe Shyam</p>
+            <p className="movie-name">Locked</p>
           </div>
         </div>
 
         <div className="movie-card webseries-Kailasapuram">
           <div className="details-of-movie-card">
             <i className="fa-solid fa-circle-play play-icon">{}</i>
-            <p className="movie-name">RRR</p>
+            <p className="movie-name">Kailasapuram</p>
           </div>
         </div>
 
