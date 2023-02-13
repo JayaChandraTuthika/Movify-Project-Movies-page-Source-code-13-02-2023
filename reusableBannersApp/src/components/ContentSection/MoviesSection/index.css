@@ -1,0 +1,45 @@
+* {
+  border: 1px solid wheat;
+}
+.movies-list-bg-container {
+  background-color: transparent;
+  height: 100%;
+  padding: 2% 3%;
+}
+.movies-header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.latest-movies-heading {
+  font-size: 30px;
+  margin: 0;
+}
+.input-search-movies-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.search-input-movies {
+  padding: 5px 15px;
+  font-size: 15px;
+  color: white;
+  border: none;
+
+  background-color: transparent;
+  outline: none;
+  width: 300px;
+}
+.search-icon-movies {
+  height: 25px;
+  color: white;
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}

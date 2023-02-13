@@ -1,12 +1,15 @@
-import {Component} from 'react'
+import {Switch, Route} from 'react-router-dom'
 import HomeSection from './HomeSection'
+import MoviesSection from './MoviesSection'
+
 import './movieCards.css'
 import './moviesPageStyles.css'
 
-class ContentSection extends Component {
-  render() {
-    return <HomeSection />
-  }
-}
+const ContentSection = () => (
+  <Switch>
+    <Route path="/home" component={HomeSection} />
+    <Route path="/movies" component={MoviesSection} />
+  </Switch>
+)
 
 export default ContentSection
