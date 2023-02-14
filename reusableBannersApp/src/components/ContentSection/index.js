@@ -7,8 +7,8 @@ import './moviesPageStyles.css'
 
 const ContentSection = () => (
   <Switch>
-    <Route path="/home" component={HomeSection} />
-    <Route path="/movies" component={MoviesSection} />
+    <Route exact path="/" component={HomeSection} />
+    <Route exact path="/movies" component={MoviesSection} />
   </Switch>
 )
 

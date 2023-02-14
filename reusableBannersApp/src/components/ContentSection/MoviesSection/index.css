@@ -1,5 +1,5 @@
 * {
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
 }
 .movies-list-bg-container {
   background-color: transparent;
@@ -42,4 +42,11 @@
   border: none;
   cursor: pointer;
   margin-right: 5px;
+}
+.movies-list-container {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
