@@ -14,7 +14,11 @@
 }
 .latest-movies-heading {
   font-size: 30px;
+  font-weight: 600;
   margin: 0;
+}
+.movies-separator-line {
+  border: 1px solid rgb(106, 106, 106);
 }
 .input-search-movies-container {
   display: flex;

@@ -30,10 +30,30 @@ class MoviesSection extends Component {
       return -1
     })
 
+    const allMoviesInDateDesc = movieList.sort((a, b) => {
+      const date1 = new Date(a.releaseDate)
+      const date2 = new Date(b.releaseDate)
+      if (date1 < date2) {
+        return 1
+      }
+      return -1
+    })
+
     return (
       <div className="movies-list-bg-container">
         <div className="movies-header">
           <h1 className="latest-movies-heading">Latest Movies</h1>
+        </div>
+        <hr className="movies-separator-line" />
+        <ul className="movies-list-container">
+          {newLatestMoviesList.slice(0, 10).map(each => (
+            <MovieCardItem movieDetails={each} key={each.id} />
+          ))}
+        </ul>
+        <br />
+        <div className="movies-header">
+          <h1 className="latest-movies-heading">All Movies</h1>
+
           <div className="input-search-movies-container">
             <input
               type="search"
@@ -43,8 +63,9 @@ class MoviesSection extends Component {
             <BsSearch className="search-icon-movies" />
           </div>
         </div>
+        <hr className="movies-separator-line" />
         <ul className="movies-list-container">
-          {newLatestMoviesList.slice(0, 10).map(each => (
+          {allMoviesInDateDesc.map(each => (
             <MovieCardItem movieDetails={each} key={each.id} />
           ))}
         </ul>
