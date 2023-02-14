@@ -10,11 +10,13 @@ const MovieCardItem = props => {
   }
 
   return (
-    <li className="list-item-container" style={selectionStyle}>
-      <div className="details-of-movie-card">
-        <i className="fa-solid fa-circle-play play-icon">{}</i>
-        <p className="movie-name">{movieName}</p>
+    <li>
+      <div className="list-item-container" style={selectionStyle}>
+        <div className="details-of-movie-card-1">
+          <i className="fa-solid fa-circle-play play-icon-1">{}</i>
+        </div>
       </div>
+      <p className="movie-name-1">{movieName}</p>
     </li>
   )
 }
