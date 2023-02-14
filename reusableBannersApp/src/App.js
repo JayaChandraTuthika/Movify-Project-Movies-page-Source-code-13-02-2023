@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import ContentSection from './components/ContentSection'
 
 import './App.css'
