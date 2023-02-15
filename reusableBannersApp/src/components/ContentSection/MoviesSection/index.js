@@ -8,16 +8,14 @@ import './index.css'
 const movies = [...moviesList]
 
 class MoviesSection extends Component {
-  state = {movieList: movies}
+  state = {movieList: movies, searchInput: ''}
 
-  getUsers = () => {
-    fetch('http://localhost:3005/users/').then(response => {
-      console.log(response)
-    })
+  onChangeSearchAllMovies = event => {
+    this.setState({searchInput: event.target.value})
   }
 
   render() {
-    const {movieList} = this.state
+    const {movieList, searchInput} = this.state
 
     const latestMovies = movieList.filter(each => {
       const date = new Date(each.releaseDate)
@@ -45,6 +43,10 @@ class MoviesSection extends Component {
       return -1
     })
 
+    const filteredAllMovies = allMoviesInDateDesc.filter(each =>
+      each.movieName.toLowerCase().includes(searchInput.toLowerCase()),
+    )
+
     return (
       <div className="movies-list-bg-container">
         <div className="movies-header">
@@ -59,19 +61,20 @@ class MoviesSection extends Component {
         <br />
         <div className="movies-header">
           <h1 className="latest-movies-heading">All Movies</h1>
-
           <div className="input-search-movies-container">
             <input
               type="search"
               className="search-input-movies"
               placeholder="Enter Movie Name"
+              value={searchInput}
+              onChange={this.onChangeSearchAllMovies}
             />
             <BsSearch className="search-icon-movies" />
           </div>
         </div>
         <hr className="movies-separator-line" />
         <ul className="movies-list-container">
-          {allMoviesInDateDesc.map(each => (
+          {filteredAllMovies.map(each => (
             <MovieCardItem movieDetails={each} key={each.id} />
           ))}
         </ul>
