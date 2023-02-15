@@ -2,8 +2,8 @@ import './index.css'
 
 const MovieCardItem = props => {
   const {movieDetails} = props
-  const {movieName, releaseDate, thumbnailUrl} = movieDetails
-  console.log(new Date(releaseDate))
+  const {movieName, thumbnailUrl} = movieDetails
+  //   console.log(new Date(releaseDate))
 
   const selectionStyle = {
     backgroundImage: `url(${thumbnailUrl})`,

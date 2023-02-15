@@ -6,5 +6,5 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('contentSection'),
+  document.getElementById('root'),
 )

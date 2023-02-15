@@ -2,7 +2,6 @@ import {Switch, Route} from 'react-router-dom'
 import HomeSection from './HomeSection'
 import MoviesSection from './MoviesSection'
 
-import './movieCards.css'
 import './moviesPageStyles.css'
 
 const ContentSection = () => (

@@ -1,4 +1,5 @@
 import './index.css'
+import './movieCards.css'
 
 const HomeSection = () => (
   <div>
