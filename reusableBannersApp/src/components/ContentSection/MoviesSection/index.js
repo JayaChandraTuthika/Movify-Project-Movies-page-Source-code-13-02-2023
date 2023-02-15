@@ -10,6 +10,12 @@ const movies = [...moviesList]
 class MoviesSection extends Component {
   state = {movieList: movies}
 
+  getUsers = () => {
+    fetch('http://localhost:3005/users/').then(response => {
+      console.log(response)
+    })
+  }
+
   render() {
     const {movieList} = this.state
 
