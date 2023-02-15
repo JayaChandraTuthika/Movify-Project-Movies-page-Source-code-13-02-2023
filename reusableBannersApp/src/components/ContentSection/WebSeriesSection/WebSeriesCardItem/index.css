@@ -1,0 +1,53 @@
+.list-item-container {
+  background-size: cover;
+  padding: 25px;
+  height: 200px;
+  width: 150px;
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  transition: 0.4s all ease;
+}
+.list-item-container:hover {
+  bottom: 3px;
+  height: 210px;
+  width: 170px;
+}
+.details-of-movie-card-1 {
+  padding: 6px;
+  height: 100%;
+  background-color: transparent;
+  color: transparent;
+  transition: 0.5s all ease;
+  /* border: 1px solid white; */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  border-radius: 10px;
+}
+.details-of-movie-card-1:hover {
+  background-color: rgba(3, 3, 3, 0.507);
+  color: white;
+}
+.movie-name-1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.play-icon-1 {
+  font-size: 50px;
+  margin: auto;
+  position: relative;
+  top: 5px;
+}
